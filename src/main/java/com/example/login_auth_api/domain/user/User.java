@@ -7,17 +7,16 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table (name= "users")
+@Table(name = "users")
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-
-public class user {
+public class User {
     @Id
-    @GeneratedValue (strategy = GenerationType.UUID)
-        private String id;
-        private String name;
-        private String email;
-        private String password;
+    @GeneratedValue(strategy = GenerationType.UUID)
+    private String id;
+    private String name;
+    private String email;
+    private String password;
 }
